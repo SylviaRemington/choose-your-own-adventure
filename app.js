@@ -28,12 +28,19 @@ if (location === woods){
 const animal = prompt("What is your favorite animal? ")
 console.log(`Your favorite animal is a ${animal}. A magical ${animal} appeared and will now be your superhero friend on your journey. How did you get so lucky?!`)
 
-    
+if (location === woods){
+    console.log(`You and your magical, superhero ${animal}, fly over the dense underbrush, and find 3 separate treasure chests: a pure gold chest, a pure silver chest, and a chest made of cotton candy. You can only choose one.`);
+} else if (location === ocean){
+    console.log(`You and your magical, superhero ${animal}, dive deep into the waves, and find 3 separate treasure chests: a pure gold chest, a pure silver chest, and a chest made of cotton candy. You can only choose one.`);
+} else if (location === desert){
+    console.log(`You and your magical, superhero ${animal}, twirl until you create a sandstorm, fly into the sky, and find 3 separate treasure chests: a pure gold chest, a pure silver chest, and a chest made of cotton candy. You can only choose one.`)
+} 
 
+const chest = prompt(`Do you and your ${animal} choose the chest of gold, silver, or cotton candy? `)
+console.log("Great choice! Now you have won the greatest treasure there is!")
 
-
-
-
-
-
-
+//I also wanted to do more with this project, but I ran out of time. I was figuring out how to use git and save to the repository. But I will work more on this this weekend.
+//I want to create a game after they opened the chest where they find a magic wand that mistakenly gets used and they have to fight monsters for points.
+//Also, I don't know yet how to go back to my original work after saving to a repository. So I initially created another file with the office hours TA. The link to that is below.
+//https://github.com/SylviaRemington/choose-your-own-adventure/blob/main/app.js
+//I still don't really get how to connect this VS Code to a git repository. I get up to git clone and do that, and then it doesn't work when I try to do the rest.
